@@ -61,21 +61,21 @@ func (l *LinkedList) DeleteNode(key int) {
 	fmt.Println("Node deleted")
 }
 
-func main() {
-	list := LinkedList{}
-	node1 := &Node{data: 1}
-	node2 := &Node{data: 2}
-	node3 := &Node{data: 3}
-	node4 := &Node{data: 4}
-	node5 := &Node{data: 6}
-	list.PushBack(node1)
-	list.PushBack(node2)
-	list.PushBack(node3)
-	list.PushBack(node4)
-	list.PushBack(node5)
-	fmt.Println("Length = ", list.Len())
-	list.Display()
-	list.DeleteNode(4)
-	fmt.Println("Length = ", list.Len())
-	list.Display()
-}
+// func main() {
+// 	list := LinkedList{}
+// 	node1 := &Node{data: 1}
+// 	node2 := &Node{data: 2}
+// 	node3 := &Node{data: 3}
+// 	node4 := &Node{data: 4}
+// 	node5 := &Node{data: 6}
+// 	list.PushBack(node1)
+// 	list.PushBack(node2)
+// 	list.PushBack(node3)
+// 	list.PushBack(node4)
+// 	list.PushBack(node5)
+// 	fmt.Println("Length = ", list.Len())
+// 	list.Display()
+// 	list.DeleteNode(4)
+// 	fmt.Println("Length = ", list.Len())
+// 	list.Display()
+// }
