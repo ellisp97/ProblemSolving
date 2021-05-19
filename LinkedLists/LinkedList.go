@@ -9,6 +9,14 @@ type Node struct {
 	key  interface{}
 }
 
+func appendToTail(n *Node, d int) {
+	end := &Node{data: d}
+	for n.next != nil {
+		n = n.next
+	}
+	n.next = end
+}
+
 type LinkedList struct {
 	length int
 	head   *Node

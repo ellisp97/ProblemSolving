@@ -1,13 +1,5 @@
 package main
 
-func appendToTail(n *Node, d int) {
-	end := &Node{data: d}
-	for n.next != nil {
-		n = n.next
-	}
-	n.next = end
-}
-
 func RemoveDuplicatesFromLinkedList(n *Node) {
 	if n == nil {
 		return

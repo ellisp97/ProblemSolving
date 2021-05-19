@@ -9,8 +9,12 @@ func main() {
 
 	k := 3
 	kth_node := _GetKthToLastNode(node_delete, k)
-	fmt.Printf("%d'th node is %d", k, kth_node.data)
+	fmt.Printf("%d'th node is %d \n", k, kth_node.data)
 
+	can_delete := DeleteMiddleNode(kth_node.next.next)
+	fmt.Printf("middle node delete returned %v \n", can_delete)
+
+	TestPartitions()
 }
 
 func Display(n *Node) {
