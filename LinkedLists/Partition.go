@@ -19,12 +19,11 @@ func PartitionLinkedList(node *Node, partition_val int) *Node {
 			temp.next = head
 			head = temp
 		} else {
-			tail.next = temp
+			tail.next = temp // Remember as tail and head point to the same memory address (node) tail.next will affect head.next also
 			tail = tail.next
 		}
 	}
 	return head
-
 }
 
 func TestPartitions() {
