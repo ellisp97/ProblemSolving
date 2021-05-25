@@ -9,6 +9,15 @@ type Node struct {
 	key  interface{}
 }
 
+func (n *Node) Len() int {
+	var counter int
+	for n != nil {
+		counter++
+		n = n.next
+	}
+	return counter
+}
+
 func appendToTail(n *Node, d int) {
 	end := &Node{data: d}
 	for n.next != nil {

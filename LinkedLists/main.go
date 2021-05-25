@@ -15,6 +15,8 @@ func main() {
 	fmt.Printf("middle node delete returned %v \n", can_delete)
 
 	TestPartitions()
+	TestSums()
+	TestSumsBackwards()
 }
 
 func Display(n *Node) {
