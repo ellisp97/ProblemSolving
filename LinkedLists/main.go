@@ -17,6 +17,7 @@ func main() {
 	TestPartitions()
 	TestSums()
 	TestSumsBackwards()
+	TestPalindrome()
 }
 
 func Display(n *Node) {
